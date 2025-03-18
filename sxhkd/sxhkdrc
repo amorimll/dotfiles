@@ -3,8 +3,8 @@
 #
 
 # terminal emulator
-super + Return
-	alacritty
+super + q
+	kitty
 
 # program launcher
 super + @space
@@ -123,3 +123,6 @@ super + {Left,Down,Up,Right}
 
 super + e
 	thunar
+
+Print 
+	flameshot gui

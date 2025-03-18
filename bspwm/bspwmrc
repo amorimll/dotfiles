@@ -2,10 +2,11 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+#bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d . . . . . . . . . .
 
-bspc config border_width         2
-bspc config window_gap          12
+bspc config border_width         0
+bspc config window_gap          8
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -18,7 +19,9 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 sxhkd &
-picom --config /root/.config/picom/picom.conf &
+#picom --config /root/.config/picom/picom.conf &
+picom --config ~/.config/picom/picom.conf &
 nitrogen --restore &
 polybar &
 xrandr --output DP-0 --primary --output HDMI-0 --right-of DP-0
+feh --bg-fill ~/.wallpapers/wallhaven-p8drxp.jpg
