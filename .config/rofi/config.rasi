@@ -1,0 +1,85 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "Fira Sans 14";
+}
+
+* {
+    background-color: transparent; // Define transparência global
+    text-color: #ffffff; // Texto branco
+    border: 0px;
+}
+
+window {
+    transparency: "real"; // Habilita transparência real
+    location: center;
+    anchor: center;
+    fullscreen: true; // Faz o Rofi cobrir a tela inteira
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0.8); // Fundo preto com 80% de opacidade
+}
+
+mainbox {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+}
+
+inputbar {
+    background-color: transparent;
+    text-color: #ffffff;
+    padding: 10px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: #ffffff;
+    background-color: transparent;
+}
+
+entry {
+    background-color: transparent;
+    text-color: #ffffff;
+    placeholder: "Search...";
+    placeholder-color: #aaaaaa;
+}
+
+listview {
+    background-color: transparent;
+    border: 0px;
+    padding: 10px;
+    spacing: 5px;
+    lines: 10;
+    columns: 1;
+}
+
+element {
+    background-color: rgba(255, 255, 255, 0.1); // Garante que os itens sejam transparentes
+    text-color: #ffffff;
+    padding: 8px;
+    border: 0px;
+}
+
+element-text {
+    background-color: transparent; // Garante que o texto dentro dos elementos seja transparente
+    text-color: #ffffff;
+}
+
+element-icon {
+    background-color: transparent; // Garante que os ícones sejam transparentes
+}
+
+element selected {
+    background-color: rgba(255, 255, 255, 0.1); // Um leve destaque ao selecionar
+    text-color: #ffffff;
+    border: 0px;
+}
+
+element selected normal {
+    background-color: rgba(255, 255, 255, 0.1); // Mantém o mesmo destaque
+    text-color: #ffffff;
+}
