@@ -2,6 +2,7 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 vim.opt.wrap = true;
+--vim.opt.shell = "/bin/zsh"
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
@@ -11,6 +12,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     vim.api.nvim_set_hl(0, "FloatBorder", { fg = "NONE", bg = "#2E3440" })
   end,
 })
+
+vim.api.nvim_set_hl(0, "SnacksPickerGitStatusUntracked", { fg = "#D8DEE9" }) -- Cor clara para contraste
 
 -- Torna os separadores transparentes
 --vim.api.nvim_set_hl(0, "VertSplit", { bg = "NONE", fg = "NONE" })

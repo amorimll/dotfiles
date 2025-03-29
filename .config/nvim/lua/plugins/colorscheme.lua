@@ -1,4 +1,5 @@
 return {
+  --"gbprod/nord.nvim",
   "shaunsingh/nord.nvim",
   opts = {
     transparent = true,

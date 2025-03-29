@@ -24,4 +24,4 @@ picom --config ~/.config/picom/picom.conf &
 nitrogen --restore &
 polybar &
 xrandr --output DP-0 --primary --output HDMI-0 --right-of DP-0
-feh --bg-fill ~/.wallpapers/lua-arvores.jpg
+feh --bg-fill ~/.wallpapers/monte-fuji.png
