@@ -1,5 +1,11 @@
 #! /bin/sh
 
+export GTK_THEME=Adwaita-dark
+
+# Definir o tema do cursor diretamente no bspwmrc (opcional)
+export XCURSOR_THEME=Papirus-Dark
+export XCURSOR_SIZE=24
+
 pgrep -x sxhkd >/dev/null || sxhkd &
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
@@ -27,5 +33,7 @@ sxhkd &
 picom --config ~/.config/picom/picom.conf &
 nitrogen --restore &
 polybar &
+darkman run &
 xrandr --output DP-0 --primary --output HDMI-0 --right-of DP-0
 feh --bg-fill ~/.wallpapers/bridge.png
+

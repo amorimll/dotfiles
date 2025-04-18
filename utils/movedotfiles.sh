@@ -13,13 +13,15 @@ if [ ! -d "$DEST_DIR" ]; then
 fi
 
 # Copiar as configurações para o diretório de destino
-cp -r "$HOME/.config/bspwm" "$DEST_DIR"
+cp -r "$HOME/.config/bspwm/" "$DEST_DIR"
 cp -r "$HOME/.config/kitty" "$DEST_DIR"
 cp -r "$HOME/.config/picom" "$DEST_DIR"
 cp -r "$HOME/.config/polybar" "$DEST_DIR"
 cp -r "$HOME/.config/sxhkd" "$DEST_DIR"
 cp -r "$HOME/.config/rofi" "$DEST_DIR"
 cp -r "$HOME/.config/nvim" "$DEST_DIR"
-cp -r ".wallpapers" "$WALLPAPERS_DIR"
+cp -r "$HOME/.config/gtk-3.0" "$DEST_DIR"
+
+cp -r "$HOME/.wallpapers" "$WALLPAPERS_DIR"
 
 echo "Configurações copiadas para $DEST_DIR e $WALLPAPERS_DIR"
