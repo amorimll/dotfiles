@@ -22,6 +22,6 @@ cp -r "$HOME/.config/rofi" "$DEST_DIR"
 cp -r "$HOME/.config/nvim" "$DEST_DIR"
 cp -r "$HOME/.config/gtk-3.0" "$DEST_DIR"
 
-cp -r "$HOME/.wallpapers" "$WALLPAPERS_DIR"
+cp -r "$HOME/.wallpapers/." "$WALLPAPERS_DIR"
 
 echo "Configurações copiadas para $DEST_DIR e $WALLPAPERS_DIR"
