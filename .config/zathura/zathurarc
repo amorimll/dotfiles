@@ -1,0 +1,14 @@
+# Catppuccin Mocha Theme for Zathura
+set default-bg "#1E1E2E" # Fundo principal (base)
+set default-fg "#CDD6F4" # Texto principal (text)
+set statusbar-bg "#313244" # Fundo da barra de status
+set statusbar-fg "#CDD6F4" # Texto da barra de status
+set inputbar-bg "#313244" # Fundo da barra de entrada
+set inputbar-fg "#CDD6F4" # Texto da barra de entrada
+set completion-bg "#313244" # Fundo do autocompletar
+set completion-fg "#CDD6F4" # Texto do autocompletar
+set completion-highlight-bg "#45475A" # Destaque do autocompletar
+set completion-highlight-fg "#CDD6F4" # Texto do destaque
+set recolor true # Ativa a recoloração para o fundo do PDF
+set recolor-lightcolor "#1E1E2E" # Cor de fundo do PDF
+set recolor-darkcolor "#CDD6F4" # Cor do texto do PDF

@@ -21,6 +21,7 @@ cp -r "$HOME/.config/sxhkd" "$DEST_DIR"
 cp -r "$HOME/.config/rofi" "$DEST_DIR"
 cp -r "$HOME/.config/nvim" "$DEST_DIR"
 cp -r "$HOME/.config/gtk-3.0" "$DEST_DIR"
+cp -r "$HOME/.config/zathura" "$DEST_DIR"
 
 cp -r "$HOME/.wallpapers/." "$WALLPAPERS_DIR"
 

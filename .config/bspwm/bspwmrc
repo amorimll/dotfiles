@@ -17,8 +17,9 @@ bspc config window_gap 8
 bspc config split_ratio 0.52
 #bspc config borderless_monocle true
 bspc config gapless_monocle true
-bspc config border_width 2                 # espessura da borda
-bspc config normal_border_color "#44475a"  # cor da borda normal
+bspc config border_width 2 # espessura da borda
+#bspc config normal_border_color "#44475a"  # cor da borda normal
+bspc config normal_border_color "#8080c8"  # cor da borda normal
 bspc config active_border_color "#8080c8"  # cor da janela ativa
 bspc config focused_border_color "#8080c8" # cor da janela em foco
 
@@ -34,6 +35,7 @@ picom --config ~/.config/picom/picom.conf &
 nitrogen --restore &
 polybar &
 darkman run &
+xsetroot -cursor_name left_ptr &
+
 xrandr --output DP-0 --primary --output HDMI-0 --right-of DP-0
 feh --bg-fill ~/.wallpapers/bridge.png
-
